@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
+// Include the files from the routes directory. Using (app) at the end tells it to use express, using the variable we set at the top. 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 

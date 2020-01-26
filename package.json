@@ -1,0 +1,25 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duquetteman/note_taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/duquetteman/note_taker/issues"
+  },
+  "homepage": "https://github.com/duquetteman/note_taker#readme"
+}

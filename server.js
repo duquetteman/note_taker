@@ -1,11 +1,12 @@
 // Express makes routing easy with node.js
 const express = require("express");
-// Creating a variable app whixh is eaula to express so we can easily call it later. 
+// Creating a variable app which is equal to express so we can easily call it later. 
 const app = express();
 
 // Create a variable called port that will take the route that it is assigned by a deployment site, like Heroku, or it will use port 8000 for local host testing. 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 
+// Data pasring with express.
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));

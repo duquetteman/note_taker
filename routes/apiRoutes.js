@@ -17,6 +17,7 @@ module.exports = function (app) {
 
     // * POST `/api/notes` - Should recieve a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
     app.post("/api/notes", function (req, res) {
+        console.log("test");
         var newNote = req.body;
         noteData.push(newNote);
         let parsedata = JSON.stringify(noteData)
@@ -31,17 +32,19 @@ module.exports = function (app) {
 
     // splice removes the element from the array. 
     app.delete("/api/notes/:id", function (req, res) {
+        console.log("erase");
         var deleteData = req.params.id;
+        console.log(deleteData)
         for (i = 0; i < noteData.length; i++) {
             if (deleteData === noteData[i].title) {
                 noteData.splice(i, 1)
             };
         };
-        // JSON.stringify converts the object into a string. 
         let parsedata = JSON.stringify(noteData)
         fs.writeFile(path.join('db.json'), parsedata, (err) => {
             if (err) throw err;
         })
+        console.log(noteData)
         res.json(noteData)
     })
 }

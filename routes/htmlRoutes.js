@@ -12,6 +12,7 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "/notes.html"));
     });
 
+    // Not sure these are needed. App works when these are commended out. 
     app.get("../assets/js/index.js", function(req, res){
         res.sendFile(path.join(__dirname, "/assets/js/index.js"))
     });

@@ -1,4 +1,9 @@
-# Unit 11 Express Homework: Note Taker
+# Note Taker
+
+## Instructions: 
+Clone the repo to a local directory, run npm install, then node server.js from the command line. App will listen on localhost:8080 
+
+Open a web browser window and go to localhost:8080 in the address bar. 
 
 ## Description
 
@@ -6,11 +11,7 @@ An application that can be used to write, save, and delete notes. This applicati
 
 ## User Story
 
-AS A user, I want to be able to write and save notes
-
-I WANT to be able to delete notes I've written before
-
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+As a user I want to be able to write and save notes and delete notes I've written before so that I can organize my thoughts and keep track of tasks I need to complete
 
 ## Business Context
 
